@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/navigate_before"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/title_music"
+        android:layout_alignBottom="@id/title_music"
+        android:src="@drawable/baseline_navigate_before_24" />
+
+    <TextView
+        android:id="@+id/title_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Ternyata Kamu"
+        android:textColor="#FFDB00"
+        android:paddingVertical="10dp"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/more_vert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/title_music"
+        android:layout_alignBottom="@id/title_music"
+        android:src="@drawable/baseline_more_vert_24" />
+
+    <ImageView
+        android:id="@+id/img_music"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/image" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:progressBackgroundTint="#FFDB00"
+        android:thumbTint="#AF47D2"
+        android:progressTint="#FFDB00"
+        android:progress="30"
+        />
+
+    <TextView
+        android:id="@+id/nama_penyanyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/seek_bar"
+        android:layout_marginTop="40dp"
+        android:text="Kohi Sekai"
+        android:textColor="#FF8F00"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/title_music_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nama_penyanyi"
+        android:layout_marginTop="20dp"
+        android:text="Ternyata Kamu"
+        android:textColor="#FFDB00"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/play_circle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/title_music_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/baseline_play_circle_filled_24" />
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/title_music_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/baseline_play_arrow_24" />
+
+    <ImageView
+        android:id="@+id/skip_prevoius"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/play_circle"
+        android:layout_alignBottom="@id/play_circle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/baseline_skip_previous_24" />
+
+    <ImageView
+        android:id="@+id/skip_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/play_circle"
+        android:layout_alignBottom="@id/play_circle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/baseline_skip_next_24" />
+</RelativeLayout>
